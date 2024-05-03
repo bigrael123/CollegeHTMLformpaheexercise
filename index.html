@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hardware Store</h1>
+    <div>
+    <form method="post" action="test.jsp"></form>
+      <div>
+        <label for="">Name:</label> <input type="text" name="name">
+      </div> 
+       <br>
+       <div>
+        <label for="">Email:</label> <input type="email" name="email">
+      </div> 
+       <br>
+       <div>
+        <label for="">Select a GPU:</label> 
+        <input type="radio" name="GPUs" value="RTX 4060" checked>RTX 4060
+        <input type="radio" name="GPUs" value="RTX 4070">RTX 4070
+        <input type="radio" name="GPUs" value="RTX 4080">RTX 4080
+        <input type="radio" name="GPUs" value="RTX 4090">RTX 4090
+       </div>
+       <br>
+        <div>
+            <label for="">Select the brand:</label>  
+            <select name="Brands" id="Brands" onchange="Activateselect2();">
+                <option value="MSI">MSI</option>
+                <option value="ASUS">ASUS</option>
+                <option value="Gigabyte">Gigabyte</option>
+               </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Extra:</label>
+            <label for="">3 Fans</label>  <input type="checkbox" name="fans" value="3FansYes">
+            <label for="">RGB</label>  <input type="checkbox" name="RGB" value="RGBYes">
+        </div>
+        <div>
+            <label for="">Delivery Date:</label>
+            <input type="date" name="deliveryDate">
+        </div>
+        <br>
+        <div>
+            <div><label for="" >Comment</label></div>
+            <Textarea rows="15" cols="50" name="msg"></Textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+    </div>
+                            
+                        
+
+    </form>
+</body>
+</html>
